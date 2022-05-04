@@ -1,0 +1,186 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color:rgb(79, 77, 77);
+    font-family: 'Poppins', sans-serif;
+}
+
+ul {
+    list-style: none;
+    font-size: 15px;
+    font-style: italic;
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+    font-weight: 700;
+}
+
+body {
+    height: 100vh;
+    background-image: linear-gradient(to top,
+     #c1ffac, #83eabb, #54d1c6, 
+    #43b6c6, #5099b8, #4c8aa8, #477b97,
+     #426c87, #2c667a, #195f6a, #0f5758,
+      #114f46);
+      
+
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 12px ridge white;
+    margin-bottom:45px;
+}
+
+header ul {
+    display: flex;
+
+}
+
+header ul li {
+    padding: 5px;
+    border-bottom: 2px solid rgb(45, 219, 82);
+    text-align: center;
+}
+
+header ul li a {
+    transition: 300ms;
+    color: rgb(255, 255, 255);
+    
+}
+
+header ul li a:hover{
+    color: yellow;
+    text-decoration: underline;
+    
+}
+
+header ul li{
+    align-items: center;
+
+    }
+
+
+.container{
+    text-align: center;
+}
+
+.container .name h1 {
+    font-size: 60px;
+    color: rgb(255, 255, 255);
+    text-decoration: underline;
+}
+
+.container .name h5 {
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+}
+#arrow {
+    font-size: 35px;
+    cursor: pointer;
+    animation: blink 1s steps(5, start) infinite;
+
+    
+}
+
+@keyframes blink {
+    to{
+        visibility: hidden;
+    }
+}
+
+#animation{
+    transition: 300ms;
+}
+
+.rotate {
+    transform: rotate(360deg);
+    transition: 300ms;
+}
+
+.active {
+    display: block !important;
+}
+
+
+#about p{
+    max-width: 600px;
+    margin: 0 auto;
+    color: rgb(255, 255, 255)
+}
+
+.flex {
+    margin-top: 30px;
+    size-adjust: 30px;
+}
+
+.form{
+    width: 40%;
+    margin: 0 auto;
+    border: thick double rgb(255, 255, 255) ;
+    padding: 15px 0px;
+    margin-top: 30px;
+}
+
+.form input{
+    width: 53%;
+    height: 32px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 10px 0px 0px 10px;
+
+   }
+
+
+.button {
+    width: 15%;
+    padding: 3.5px 10px 6px;
+    background-color: rgb(199, 245, 51);
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    transition: 300ms;
+    border-radius: 0px 10px 10px 0px;
+    margin-top: 20px;
+    margin-left: -5px;
+}
+
+.button:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(58, 192, 246);
+}
+
+
+@media only screen and (max-width: 480px) {
+    .container .name h1 {
+        font-size: 30px
+        
+    }
+    .container .name h1 {
+        font-size: 15px
+    }
+    #about p{
+        max-width: 80%;
+        text-align: justify
+    }
+
+    .form{
+    max-width: 50%;
+    text-align: center
+    }
+
+    .button{
+        
+        margin:0.2em auto;
+    }
+
+  
+       
+}
